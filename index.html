@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Index Page">
+  <meta name="keywords" content="HTML5, Semantic Accessibility SEO">
+  <meta name="author" content="Miss Vanessa">
+  <title>Index Page</title>
+</head>
+<body>
+  <!-- Accessibility -->
+  <a href="#main-content" class="skip-link">Welcome and learn through our content</a>
+
+  <!-- Semantic header -->
+  <header>
+    <h1>Instagram Content creation</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about" aria-current="page">About us</a></li>
+        <li><a href="#services">Offers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <article>
+      <header>
+        <h2 id="about">About This Page</h2>
+      </header>
+      <p>Our page demonstrates a real picture and benefits of content creation.</p>
+    </article>
+
+    <section>
+      <h2 id="services">Our Services</h2>
+      <article>
+        <h3>Digital marketing</h3>
+        <p>We provide knowledge and skills in developing contents on marketing.</p>
+      </article>
+      <article>
+        <h3>Digital Marketing</h3>
+        <p>We help you reach your audience effectively online.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2 id="contact">Contact Us</h2>
+      <form action="#" method="post" aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="40" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shtuka Creation . All rights reserved.</p>
+  </footer>
+</body>
+</html>
