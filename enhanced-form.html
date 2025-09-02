@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to our page">
+  <title>Welcome</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    form {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      max-width: 600px;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea, button {
+      margin-top: 5px;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    .media {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shirika Content Hub</h1>
+    <p>We demonstrate lists, tables, media, and content creation creation.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2> Our services </h2>
+      <ol>
+        <li>Digital content creation</li>
+        <li>Marketing</li>
+        <li>Creativity</li>
+        <li>Collection</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Offers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Creativity</th>
+            <th>Working</th>
+            <th>Attributes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Digital content creation</td>
+            <td>6 Months</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Digital marketing </td>
+            <td>12 Months</td>
+            <td>Hybrid</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="media">
+      <h2>Introductory Video</h2>
+      <video controls width="400">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support video .
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="regno">Registration Number:</label>
+          <input type="text" id="regno" name="regno" value="AUTO-2025" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Choose a course--</option>
+            <option value="web">Digital Content Creation</option>
+            <option value="data"> Digital marketing</option>
+            <option value="ai">Artificial Intelligence in marketing </option>
+          </select>
+
+          <label>Mode of Study:</label>
+          <input type="radio" id="online" name="mode" value="online" required>
+          <label for="online">Online</label>
+
+          <input type="radio" id="offline" name="mode" value="offline">
+          <label for="offline">Offline</label>
+
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to Newsletter
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Karibu . All rights reserved.</p>
+  </footer>
+</body>
+</html>
