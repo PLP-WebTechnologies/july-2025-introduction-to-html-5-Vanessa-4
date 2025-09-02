@@ -3,69 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My Index Page">
-  <meta name="keywords" content="HTML5, Semantic Accessibility SEO">
+  <meta name="description" content="Responsive HTML5 page with Flexbox and Grid">
+  <meta name="keywords" content="HTML5, CSS3, Flexbox, Grid, Responsive">
   <meta name="author" content="Miss Vanessa">
-  <title>Index Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Accessibility -->
-  <a href="#main-content" class="skip-link">Welcome and learn through our content</a>
-
-  <!-- Semantic header -->
+  <!-- Header Section -->
   <header>
-    <h1>Instagram Content creation</h1>
-    <nav aria-label="Main navigation">
+    <h1>Responsive Layout with Flexbox & Grid</h1>
+    <nav>
       <ul>
-        <li><a href="#about" aria-current="page">About us</a></li>
-        <li><a href="#services">Offers</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main content -->
-  <main id="main-content">
-    <article>
-      <header>
-        <h2 id="about">About This Page</h2>
-      </header>
-      <p>Our page demonstrates a real picture and benefits of content creation.</p>
-    </article>
-
-    <section>
-      <h2 id="services">Our Services</h2>
-      <article>
-        <h3>Digital marketing</h3>
-        <p>We provide knowledge and skills in developing contents on marketing.</p>
-      </article>
-      <article>
-        <h3>Digital Marketing</h3>
-        <p>We help you reach your audience effectively online.</p>
-      </article>
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="container grid-layout">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>We specialize in creating responsive layouts using modern CSS techniques like Flexbox and Grid.</p>
+      </div>
+      <div class="image">
+        <img src="https://via.placeholder.com/400x250" alt="Sample layout image">
+      </div>
     </section>
 
-    <section>
-      <h2 id="contact">Contact Us</h2>
-      <form action="#" method="post" aria-label="Contact form">
+    <!-- Services Section -->
+    <section id="services" class="container flex-layout">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Beautiful, responsive, and user-friendly web designs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Development</h3>
+        <p>Modern web development using HTML5, CSS3, and JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Optimization</h3>
+        <p>Improve your website ranking with best SEO practices.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required aria-required="true">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required aria-required="true">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="40" required aria-required="true"></textarea>
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shtuka Creation . All rights reserved.</p>
+    <p>&copy; 2025 CCC. All rights reserved.</p>
   </footer>
 </body>
 </html>
